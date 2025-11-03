@@ -1,5 +1,13 @@
 import React from 'react';
-import { Box, Button, Container, Stack, Text, Title } from '@mantine/core';
+import {
+  Box,
+  // Button,
+  Container,
+  // Group,
+  Stack,
+  Text,
+  Title,
+} from '@mantine/core';
 
 const DonationCallSection = () => {
   return (
@@ -60,16 +68,26 @@ const DonationCallSection = () => {
             Have you wanted to donate blood in the past but don’t know how to go about it? Head over
             to your preferred application store, download our application, and save a life today.
           </Text>
-
-          <Button
-            size="lg"
-            radius="xl"
-            variant="gradient"
-            gradient={{ from: 'red.6', to: 'pink.6', deg: 45 }}
-            mt="md"
-          >
-            Download the App
-          </Button>
+          {/* <Group>
+            <Button
+              size="lg"
+              radius="xl"
+              variant="gradient"
+              gradient={{ from: 'red.6', to: 'pink.6', deg: 45 }}
+              mt="md"
+            >
+              Download the App
+            </Button>
+             <Button
+              size="lg"
+              radius="xl"
+              variant="gradient"
+              gradient={{ from: 'red.6', to: 'pink.6', deg: 45 }}
+              mt="md"
+            >
+              Download the App
+            </Button>
+          </Group> */}
         </Stack>
       </Container>
     </Box>

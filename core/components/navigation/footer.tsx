@@ -20,7 +20,7 @@ export function Footer() {
             <Stack gap="lg" align="center">
               <div style={{ textAlign: 'center' }}>
                 <Image
-                  src="https://medexer.com.ng/wp-content/uploads/2023/02/cropped-Medexer-final-logo-150x150.png"
+                  src="/images/medexer_logo.png"
                   alt="Medexer Logo"
                   // radius="100"
                   style={{

@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Box, Container, Drawer, Group, Image, rem, Stack } from '@mantine/core';
+import { Box, Container, Drawer, Group, Image, rem, Stack, Text } from '@mantine/core';
 import { useDisclosure, useWindowScroll } from '@mantine/hooks';
 import { navLinks } from '@/core/utilities';
 import classes from './navbar.module.css';
@@ -17,19 +17,24 @@ export function Navbar() {
         component="header"
         className={classes.header}
         style={{
-          transition: 'background-color 0.3s ease',
-          backdropFilter: scroll.y > 0 ? 'blur(5px)' : 'none',
-          WebkitBackdropFilter: scroll.y > 0 ? 'blur(5px)' : 'none',
-          backgroundColor: scroll.y > 0 ? '#ffffff80' : '#ffffff00',
-          borderBottom: scroll.y > 0 ? '1px solid var(--mantine-color-gray-3)' : '',
+          transition: 'background-color 0.9s ease',
+          // backdropFilter: scroll.y > 0 ? 'blur(5px)' : 'none',
+          // WebkitBackdropFilter: scroll.y > 0 ? 'blur(5px)' : 'none',
+          backgroundColor: scroll.y > 0 ? '#ffffffff' : '#ffffffff',
+          // borderBottom: scroll.y > 0 ? '1px solid var(--mantine-color-gray-3)' : '',
         }}
       >
         <Container size="xl" py={12}>
           <Group justify="space-between" align="center">
             {/* Left section: Logo and Navigation */}
-            <Link href="/">
-              <Image w={35} h="auto" alt="lvx" src="/images/logo.png" />
-            </Link>
+            <Group>
+              <Link href="/">
+                <Image w={35} h="auto" alt="lvx" src="/images/medexer_logo.png" />
+              </Link>
+              <Text size="xl" fw={800} c="#0a2acfff">
+                Medexer
+              </Text>
+            </Group>
 
             <Group gap={40} visibleFrom="xs">
               {navLinks.map((link) => (

@@ -3,6 +3,9 @@
 import Link from 'next/link';
 import {
   IconArrowRight,
+  IconBrandAndroid,
+  IconBrandApple,
+  IconBrandWindows,
   IconCalendar,
   IconDeviceDesktop,
   IconDeviceMobile,
@@ -257,32 +260,68 @@ const AppShowcaseSection = () => {
                   </Text>
                 </Stack>
 
-                <Link href="/desktop-app" style={{ textDecoration: 'none' }}>
-                  <Button
-                    size="lg"
-                    leftSection={<IconDownload size={20} />}
-                    style={{
-                      background: 'black',
-                      color: '#ffffffff',
-                      border: 'none',
-                      borderRadius: '8px',
-                      padding: '14px 28px',
-                      fontSize: '16px',
-                      fontWeight: 600,
-                      transition: 'all 0.2s ease',
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.transform = 'translateY(-2px)';
-                      e.currentTarget.style.boxShadow = '0 6px 16px rgba(0,0,0,0.2)';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.transform = 'translateY(0)';
-                      e.currentTarget.style.boxShadow = 'none';
-                    }}
+                <Group justify="center">
+                  <Link
+                    href="https://drive.google.com/file/d/1qTMGY5s_tXc_c7YWzafMPfL1InJbf4l8/view?usp=sharing"
+                    style={{ textDecoration: 'none' }}
                   >
-                    Download Desktop App
-                  </Button>
-                </Link>
+                    <Button
+                      size="lg"
+                      leftSection={<IconDownload size={20} />}
+                      rightSection={<IconBrandWindows size={20} />}
+                      style={{
+                        background: 'black',
+                        color: '#ffffffff',
+                        border: 'none',
+                        borderRadius: '8px',
+                        padding: '14px 28px',
+                        fontSize: '16px',
+                        fontWeight: 600,
+                        transition: 'all 0.2s ease',
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.transform = 'translateY(-2px)';
+                        e.currentTarget.style.boxShadow = '0 6px 16px rgba(0,0,0,0.2)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.transform = 'translateY(0)';
+                        e.currentTarget.style.boxShadow = 'none';
+                      }}
+                    >
+                      Download Our Desktop App Here
+                    </Button>
+                  </Link>
+                  <Link
+                    href="https://drive.google.com/file/d/1E6QfXXfI7BrWAkLyqsuBmDVNh8oHhjbo/view?usp=sharing"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <Button
+                      size="lg"
+                      leftSection={<IconDownload size={20} />}
+                      rightSection={<IconBrandApple size={20} />}
+                      style={{
+                        background: 'black',
+                        color: '#ffffffff',
+                        border: 'none',
+                        borderRadius: '8px',
+                        padding: '14px 28px',
+                        fontSize: '16px',
+                        fontWeight: 600,
+                        transition: 'all 0.2s ease',
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.transform = 'translateY(-2px)';
+                        e.currentTarget.style.boxShadow = '0 6px 16px rgba(0,0,0,0.2)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.transform = 'translateY(0)';
+                        e.currentTarget.style.boxShadow = 'none';
+                      }}
+                    >
+                      Download Our Desktop App Here
+                    </Button>
+                  </Link>
+                </Group>
               </Stack>
             </Card>
 
@@ -321,32 +360,68 @@ const AppShowcaseSection = () => {
                   </Text>
                 </Stack>
 
-                <Link href="/mobile-app" style={{ textDecoration: 'none' }}>
-                  <Button
-                    size="lg"
-                    leftSection={<IconDownload size={20} />}
-                    style={{
-                      background: 'white',
-                      color: '#dc2626',
-                      border: 'none',
-                      borderRadius: '8px',
-                      padding: '14px 28px',
-                      fontSize: '16px',
-                      fontWeight: 600,
-                      transition: 'all 0.2s ease',
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.transform = 'translateY(-2px)';
-                      e.currentTarget.style.boxShadow = '0 6px 16px rgba(0,0,0,0.2)';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.transform = 'translateY(0)';
-                      e.currentTarget.style.boxShadow = 'none';
-                    }}
+                <Stack gap="md" align="center">
+                  <Link
+                    href="https://play.google.com/store/apps/details?id=medexer.medexer_donor&pli=1"
+                    style={{ textDecoration: 'none' }}
                   >
-                    Download Mobile App
-                  </Button>
-                </Link>
+                    <Button
+                      size="lg"
+                      leftSection={<IconDownload size={20} />}
+                      rightSection={<IconBrandAndroid size={20} />}
+                      style={{
+                        background: 'white',
+                        color: '#dc2626',
+                        border: 'none',
+                        borderRadius: '8px',
+                        padding: '14px 28px',
+                        fontSize: '16px',
+                        fontWeight: 600,
+                        transition: 'all 0.2s ease',
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.transform = 'translateY(-2px)';
+                        e.currentTarget.style.boxShadow = '0 6px 16px rgba(0,0,0,0.2)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.transform = 'translateY(0)';
+                        e.currentTarget.style.boxShadow = 'none';
+                      }}
+                    >
+                      Download Our Mobile App Here
+                    </Button>
+                  </Link>
+                  <Link
+                    href="https://apps.apple.com/ng/app/medexer/id6739403737"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <Button
+                      size="lg"
+                      leftSection={<IconDownload size={20} />}
+                      rightSection={<IconBrandApple size={20} />}
+                      style={{
+                        background: 'white',
+                        color: '#dc2626',
+                        border: 'none',
+                        borderRadius: '8px',
+                        padding: '14px 28px',
+                        fontSize: '16px',
+                        fontWeight: 600,
+                        transition: 'all 0.2s ease',
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.transform = 'translateY(-2px)';
+                        e.currentTarget.style.boxShadow = '0 6px 16px rgba(0,0,0,0.2)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.transform = 'translateY(0)';
+                        e.currentTarget.style.boxShadow = 'none';
+                      }}
+                    >
+                      Download Our Mobile App Here
+                    </Button>
+                  </Link>
+                </Stack>
               </Stack>
             </Card>
           </SimpleGrid>

@@ -26,7 +26,9 @@ const FeaturedSection = () => {
             try {
               ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
               const dataUrl = canvas.toDataURL('image/jpeg', 0.85);
-              if (!cancelled) {setPreviewSrc(dataUrl);}
+              if (!cancelled) {
+                setPreviewSrc(dataUrl);
+              }
             } catch (_) {
               // ignore CORS taint errors and keep fallback image
             }
@@ -57,13 +59,7 @@ const FeaturedSection = () => {
 
   return (
     <Container size="xl" py={{ base: 48, sm: 72 }}>
-      <Paper
-        radius="xl"
-        p={{ base: 20, sm: 28 }}
-        shadow="sm"
-        withBorder
-        style={{ borderColor: '#ffffffff' }}
-      >
+      <Paper radius="xl" p={{ base: 20, sm: 28 }} style={{ borderColor: '#ffffffff' }}>
         <Group
           justify="space-between"
           align="center"
@@ -80,7 +76,7 @@ const FeaturedSection = () => {
             Why is this important to us? <br /> Our Story
           </Title>
 
-          <AspectRatio ratio={8 / 3} w={{ base: '100%', sm: '60%' }}>
+          <AspectRatio ratio={16 / 9} w={{ base: '100%', sm: '60%' }}>
             <a
               href={videoUrl}
               target="_blank"

@@ -3,7 +3,7 @@ import { Container, Group, Image, Paper, Text } from '@mantine/core';
 
 const SdgSection = () => {
   return (
-    <Container size="xl" py={{ base: 25, sm: 30 }}>
+    <Container size="xl" py={{ base: 20, sm: 25 }}>
       <Paper p={{ base: 20, sm: 28 }}>
         <Group justify="center" align="center" gap={10} style={{ flexWrap: 'wrap' }}>
           <Text fz={{ base: 16, sm: 18 }} maw={500} color="green">
@@ -18,7 +18,6 @@ const SdgSection = () => {
             fit="cover"
             w={{ base: '80%', sm: '40%' }}
             h={{ base: 120, sm: 200 }}
-            
           />
         </Group>
       </Paper>
