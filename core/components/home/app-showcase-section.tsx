@@ -102,14 +102,33 @@ const AppShowcaseSection = () => {
           <SimpleGrid cols={{ base: 1, lg: 2 }} spacing="4rem" style={{ alignItems: 'center' }}>
             {/* Left - Mobile App Screenshots */}
 
-            <Paper withBorder={false} radius="xl" shadow="md" p={0} style={{ overflow: 'hidden' }}>
+            <Paper
+              withBorder={false}
+              radius="xl"
+              shadow="md"
+              p={{ base: 'xs', sm: 'sm', md: 'md' }}
+              style={{
+                overflow: 'visible',
+                width: '100%',
+                maxWidth: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+            >
               <Image
-                radius={0}
-                fit="cover"
-                // src="/images/mob_des.png"
+                radius="md"
+                fit="contain"
                 src="https://dp20430eecj0w.cloudfront.net/versions/original/b5111ae0-49b6-4782-abcd-4b70a2589213_medexerapppng.png"
-                h={{ base: 240, sm: 340, md: 320 }}
-                alt="Girls in classroom representing learning about Girlified's mission"
+                h={{ base: 200, xs: 240, sm: 300, md: 320, lg: 360 }}
+                w="100%"
+                style={{
+                  objectFit: 'contain',
+                  objectPosition: 'center',
+                  maxWidth: '100%',
+                  height: 'auto',
+                }}
+                alt="Medexer mobile app interface showing donation center booking features"
               />
             </Paper>
 
