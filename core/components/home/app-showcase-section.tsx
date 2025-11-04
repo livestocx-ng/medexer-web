@@ -106,7 +106,8 @@ const AppShowcaseSection = () => {
               <Image
                 radius={0}
                 fit="cover"
-                src="/images/mob_des.png"
+                // src="/images/mob_des.png"
+                src="https://dp20430eecj0w.cloudfront.net/versions/original/b5111ae0-49b6-4782-abcd-4b70a2589213_medexerapppng.png"
                 h={{ base: 240, sm: 340, md: 320 }}
                 alt="Girls in classroom representing learning about Girlified's mission"
               />

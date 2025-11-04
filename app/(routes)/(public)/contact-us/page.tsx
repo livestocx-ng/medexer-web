@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import {
   IconBrandFacebook,
   IconBrandLinkedin,
@@ -114,7 +115,7 @@ const ContactUs = () => {
                     width: 80,
                     height: 80,
                     borderRadius: '50%',
-                    background: 'linear-gradient(135deg, #dc2626, #ef4444)',
+                    background: 'linear-gradient(135deg, #dc2626, #071b80ff)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -155,7 +156,7 @@ const ContactUs = () => {
                     width: 80,
                     height: 80,
                     borderRadius: '50%',
-                    background: 'linear-gradient(135deg, #dc2626, #ef4444)',
+                    background: 'linear-gradient(135deg, #dc2626, #071b80ff)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -196,7 +197,7 @@ const ContactUs = () => {
                     width: 80,
                     height: 80,
                     borderRadius: '50%',
-                    background: 'linear-gradient(135deg, #dc2626, #ef4444)',
+                    background: 'linear-gradient(135deg, #dc2626, #071b80ff)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -239,7 +240,7 @@ const ContactUs = () => {
               >
                 <Stack gap="xl">
                   <div>
-                    <Title order={2} size="2rem" fw={600} c="#dc2626" mb="sm">
+                    <Title order={2} size="2rem" fw={600} c="#071b80ff" mb="sm">
                       Send us a Message
                     </Title>
                     <Text c="dimmed" size="lg">
@@ -367,7 +368,7 @@ const ContactUs = () => {
                         type="submit"
                         size="lg"
                         radius="md"
-                        color="#dc2626"
+                        color="#071b80ff"
                         leftSection={<IconSend size={20} />}
                         style={{ alignSelf: 'flex-start' }}
                       >
@@ -417,7 +418,7 @@ const ContactUs = () => {
                   }}
                 >
                   <Stack gap="lg">
-                    <Title order={3} size="1.5rem" fw={600} c="#dc2626">
+                    <Title order={3} size="1.5rem" fw={600} c="#071b80ff">
                       Office Hours
                     </Title>
                     <Stack gap="sm">
@@ -435,7 +436,7 @@ const ContactUs = () => {
                       </Group>
                     </Stack>
                     <Group gap="sm" mt="md">
-                      <IconClock size={20} color="#dc2626" />
+                      <IconClock size={20} color="#071b80ff" />
                       <Text size="sm" c="dimmed">
                         Response time: Within 2 hours during business hours
                       </Text>
@@ -454,59 +455,71 @@ const ContactUs = () => {
                   }}
                 >
                   <Stack gap="lg">
-                    <Title order={3} size="1.5rem" fw={600} c="#dc2626">
+                    <Title order={3} size="1.5rem" fw={600} c="#071b80ff">
                       Follow Us
                     </Title>
                     <Text c="dimmed">
                       Stay updated with our latest news and blood donation campaigns.
                     </Text>
                     <Group gap="md">
-                      <Anchor href="#" target="_blank" rel="noopener noreferrer">
+                      <Anchor
+                        href="https://www.facebook.com/medexerlimited"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Box
                           style={{
                             width: 48,
                             height: 48,
                             borderRadius: '50%',
-                            background: 'rgba(220, 38, 38, 0.1)',
+                            background: 'rgba(255, 255, 255, 0.1)',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
                             transition: 'all 0.2s ease',
                           }}
                         >
-                          <IconBrandFacebook size={24} color="#dc2626" />
+                          <IconBrandFacebook size={24} color="#071b80ff" />
                         </Box>
                       </Anchor>
-                      <Anchor href="#" target="_blank" rel="noopener noreferrer">
+                      <Anchor
+                        href="https://x.com/MedexerLTD?t=zaAalrK9LBFTSFxObWr2rw&s=09"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Box
                           style={{
                             width: 48,
                             height: 48,
                             borderRadius: '50%',
-                            background: 'rgba(220, 38, 38, 0.1)',
+                            background: 'rgba(255, 255, 255, 0.1)',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
                             transition: 'all 0.2s ease',
                           }}
                         >
-                          <IconBrandTwitter size={24} color="#dc2626" />
+                          <IconBrandTwitter size={24} color="#071b80ff" />
                         </Box>
                       </Anchor>
-                      <Anchor href="#" target="_blank" rel="noopener noreferrer">
+                      <Anchor
+                        href="linkedin.com/company/medexer-limited/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Box
                           style={{
                             width: 48,
                             height: 48,
                             borderRadius: '50%',
-                            background: 'rgba(220, 38, 38, 0.1)',
+                            background: 'rgba(255, 255, 255, 0.1)',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
                             transition: 'all 0.2s ease',
                           }}
                         >
-                          <IconBrandLinkedin size={24} color="#dc2626" />
+                          <IconBrandLinkedin size={24} color="#071b80ff" />
                         </Box>
                       </Anchor>
                     </Group>
@@ -543,7 +556,7 @@ const ContactUs = () => {
                 }}
               >
                 <Stack gap="md">
-                  <Title order={4} size="1.25rem" fw={600} c="#dc2626">
+                  <Title order={4} size="1.25rem" fw={600} c="#071b80ff">
                     How does Medexer work?
                   </Title>
                   <Text c="dimmed" lh={1.6}>
@@ -565,7 +578,7 @@ const ContactUs = () => {
                 }}
               >
                 <Stack gap="md">
-                  <Title order={4} size="1.25rem" fw={600} c="#dc2626">
+                  <Title order={4} size="1.25rem" fw={600} c="#071b80ff">
                     Is it safe to donate blood?
                   </Title>
                   <Text c="dimmed" lh={1.6}>
@@ -587,7 +600,7 @@ const ContactUs = () => {
                 }}
               >
                 <Stack gap="md">
-                  <Title order={4} size="1.25rem" fw={600} c="#dc2626">
+                  <Title order={4} size="1.25rem" fw={600} c="#071b80ff">
                     How often can I donate blood?
                   </Title>
                   <Text c="dimmed" lh={1.6}>
@@ -612,7 +625,7 @@ const ContactUs = () => {
                 }}
               >
                 <Stack gap="md">
-                  <Title order={4} size="1.25rem" fw={600} c="#dc2626">
+                  <Title order={4} size="1.25rem" fw={600} c="#071b80ff">
                     What are the requirements to donate?
                   </Title>
                   <Text c="dimmed" lh={1.6}>
@@ -634,7 +647,7 @@ const ContactUs = () => {
                 }}
               >
                 <Stack gap="md">
-                  <Title order={4} size="1.25rem" fw={600} c="#dc2626">
+                  <Title order={4} size="1.25rem" fw={600} c="#071b80ff">
                     Do I get compensated for donating?
                   </Title>
                   <Text c="dimmed" lh={1.6}>
@@ -656,7 +669,7 @@ const ContactUs = () => {
                 }}
               >
                 <Stack gap="md">
-                  <Title order={4} size="1.25rem" fw={600} c="#dc2626">
+                  <Title order={4} size="1.25rem" fw={600} c="#071b80ff">
                     How do I know my blood type?
                   </Title>
                   <Text c="dimmed" lh={1.6}>
@@ -689,12 +702,16 @@ const ContactUs = () => {
               become part of the life-saving community.
             </Text>
             <Group justify="center" gap="lg" mt="xl">
-              <Button size="xl" variant="white" color="#dc2626" radius="md">
-                Download App
-              </Button>
-              <Button size="xl" variant="outline" color="white" radius="md">
-                Become a Partner
-              </Button>
+              <Link href="/" style={{ textDecoration: 'none' }}>
+                <Button size="xl" variant="white" color="#dc2626" radius="md">
+                  Download App
+                </Button>
+              </Link>
+              <Link href="/contact-us" style={{ textDecoration: 'none' }}>
+                <Button size="xl" variant="outline" color="white" radius="md">
+                  Become a Partner
+                </Button>
+              </Link>
             </Group>
           </Stack>
         </Container>

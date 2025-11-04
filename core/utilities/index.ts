@@ -25,7 +25,7 @@ export const navLinks = [
   { link: '/about-us', label: 'About Us', target: '' },
   { link: '/contact-us', label: 'Contact Us', target: '' },
   { link: '/blog', label: 'Blog', target: '' },
-  { link: '/girlified-smart-pad', label: 'Reach Out to Us', target: '' },
+  { link: '/contact-us', label: 'Reach Out to Us', target: '' },
 ];
 
 export const platformFaqs = [

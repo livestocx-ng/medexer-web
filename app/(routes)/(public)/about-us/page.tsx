@@ -3,6 +3,8 @@
 import React from 'react';
 import {
   IconAward,
+  IconBrandLinkedin,
+  IconBrandTwitter,
   IconBulb,
   IconHeart,
   IconShield,
@@ -10,6 +12,7 @@ import {
   IconUsers,
 } from '@tabler/icons-react';
 import {
+  Anchor,
   AspectRatio,
   Box,
   Button,
@@ -536,9 +539,9 @@ const AboutUs = () => {
       </Box>
 
       {/* Team Section */}
-      <Container size="xl" py={10}>
+      <Container size="xl" py={80}>
         <Stack align="center" mb={60}>
-          <Title order={2} size="2.5rem" fw={600} ta="center" c="#071b80ff">
+          <Title order={2} size="2.5rem" fw={600} ta="center" c="#dc2626">
             Meet Our Team
           </Title>
           <Text size="lg" ta="center" maw={600} c="dimmed">
@@ -546,122 +549,401 @@ const AboutUs = () => {
           </Text>
         </Stack>
 
-        <Grid gutter={40}>
-          <Grid.Col span={{ base: 12, sm: 6, md: 3 }}>
+        {/* Top Row - 2 Team Members (Centered) */}
+        <Grid justify="center" gutter={40} mb={60}>
+          <Grid.Col span={{ base: 12, sm: 6, md: 4, lg: 3 }}>
             <Card
               padding="xl"
               radius="lg"
-              shadow="sm"
-              style={{ textAlign: 'center', height: '80%' }}
+              shadow="md"
+              style={{ height: '100%', textAlign: 'center' }}
             >
-              <Stack align="center">
+              <Stack align="center" gap="lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                  src="https://medexer.com.ng/wp-content/uploads/2023/10/steve-300x278.jpg"
                   alt="CEO"
-                  radius="50%"
-                  w={120}
-                  h={120}
+                  radius="5%"
+                  w={150}
+                  h={150}
                 />
                 <div>
                   <Title order={4} size="1.25rem" fw={600}>
-                    Dr. Michael Chen
+                    Steven Odinkaru
                   </Title>
-                  <Text c="#dc2626" fw={500}>
-                    CEO & Founder
-                  </Text>
-                  <Text size="sm" c="dimmed" mt="xs">
-                    Former ER physician with 15+ years of experience in emergency medicine
-                  </Text>
+                  <Text fw={500}>CEO & Founder</Text>
+                  <Group gap="md" justify="center" mt="md">
+                    <Anchor
+                      href="https://x.com/odinkarusteve"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Box
+                        style={{
+                          width: 40,
+                          height: 40,
+                          borderRadius: '50%',
+                          background: 'rgba(255, 255, 255, 0.1)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          transition: 'all 0.2s ease',
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.background = '#1da1f2';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                        }}
+                      >
+                        <IconBrandTwitter size={20} color="#071b80ff" />
+                      </Box>
+                    </Anchor>
+                    <Anchor
+                      href="https://www.linkedin.com/in/steve-odinkaru/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Box
+                        style={{
+                          width: 40,
+                          height: 40,
+                          borderRadius: '50%',
+                          background: 'rgba(255, 255, 255, 0.1)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          transition: 'all 0.2s ease',
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.background = '#0077b5';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                        }}
+                      >
+                        <IconBrandLinkedin size={20} color="#071b80ff" />
+                      </Box>
+                    </Anchor>
+                  </Group>
                 </div>
               </Stack>
             </Card>
           </Grid.Col>
 
-          <Grid.Col span={{ base: 12, sm: 6, md: 3 }}>
+          <Grid.Col span={{ base: 12, sm: 6, md: 4, lg: 3 }}>
             <Card
               padding="xl"
               radius="lg"
-              shadow="sm"
-              style={{ textAlign: 'center', height: '80%' }}
+              shadow="md"
+              style={{ height: '100%', textAlign: 'center' }}
             >
-              <Stack align="center">
+              <Stack align="center" gap="lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                  alt="CTO"
-                  radius="50%"
-                  w={120}
-                  h={120}
+                  src="https://medexer.com.ng/wp-content/uploads/2023/11/favour-maju-300x266.jpg"
+                  alt="MD"
+                  radius="5%"
+                  w={150}
+                  h={150}
                 />
                 <div>
                   <Title order={4} size="1.25rem" fw={600}>
-                    Sarah Johnson
+                    Favour Maju
                   </Title>
-                  <Text c="#dc2626" fw={500}>
-                    CTO
-                  </Text>
-                  <Text size="sm" c="dimmed" mt="xs">
-                    Tech innovator specializing in healthcare AI and mobile applications
-                  </Text>
+                  <Text fw={500}>Co-Founder/Managing Director</Text>
+                  <Group justify="center" mt="md">
+                    <Anchor
+                      href="https://x.com/Maju_Fayvour"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Box
+                        style={{
+                          width: 40,
+                          height: 40,
+                          borderRadius: '50%',
+                          background: 'rgba(255, 255, 255, 0.1)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          transition: 'all 0.2s ease',
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.background = '#1da1f2';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                        }}
+                      >
+                        <IconBrandTwitter size={20} color="#071b80ff" />
+                      </Box>
+                    </Anchor>
+                    <Anchor
+                      href="https://www.linkedin.com/in/favour-maju-146a49288/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Box
+                        style={{
+                          width: 40,
+                          height: 40,
+                          borderRadius: '50%',
+                          background: 'rgba(254, 254, 254, 0.1)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          transition: 'all 0.2s ease',
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.background = '#0077b5';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                        }}
+                      >
+                        <IconBrandLinkedin size={20} color="#071b80ff" />
+                      </Box>
+                    </Anchor>
+                  </Group>
                 </div>
               </Stack>
             </Card>
           </Grid.Col>
+        </Grid>
 
-          <Grid.Col span={{ base: 12, sm: 6, md: 3 }}>
+        {/* Bottom Row - 3 Team Members (Centered) */}
+        <Grid justify="center" gutter={40}>
+          <Grid.Col span={{ base: 12, sm: 6, md: 4 }}>
             <Card
               padding="xl"
               radius="lg"
-              shadow="sm"
-              style={{ textAlign: 'center', height: '80%' }}
+              shadow="md"
+              style={{ height: '100%', textAlign: 'center' }}
             >
-              <Stack align="center">
+              <Stack align="center" gap="lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                  alt="CMO"
-                  radius="50%"
-                  w={120}
-                  h={120}
-                />
-                <div>
-                  <Title order={4} size="1.25rem" fw={600}>
-                    David Rodriguez
-                  </Title>
-                  <Text c="#dc2626" fw={500}>
-                    Chief Medical Officer
-                  </Text>
-                  <Text size="sm" c="dimmed" mt="xs">
-                    Hematologist with expertise in blood banking and transfusion medicine
-                  </Text>
-                </div>
-              </Stack>
-            </Card>
-          </Grid.Col>
-
-          <Grid.Col span={{ base: 12, sm: 6, md: 3 }}>
-            <Card
-              padding="xl"
-              radius="lg"
-              shadow="sm"
-              style={{ textAlign: 'center', height: '80%' }}
-            >
-              <Stack align="center">
-                <Image
-                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                  src="https://medexer.com.ng/wp-content/uploads/2023/04/martins-1-267x300.jpg"
                   alt="COO"
-                  radius="50%"
-                  w={120}
-                  h={120}
+                  radius="5%"
+                  w={150}
+                  h={150}
                 />
                 <div>
                   <Title order={4} size="1.25rem" fw={600}>
-                    Emily Watson
+                    Martins Yada
                   </Title>
-                  <Text c="#dc2626" fw={500}>
-                    COO
-                  </Text>
-                  <Text size="sm" c="dimmed" mt="xs">
-                    Operations expert with background in healthcare logistics and partnerships
-                  </Text>
+                  <Text fw={500}>Co-Founder/COO</Text>
+                  <Group gap="md" justify="center" mt="md">
+                    <Anchor
+                      href="https://x.com/tisanyada"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Box
+                        style={{
+                          width: 40,
+                          height: 40,
+                          borderRadius: '50%',
+                          background: 'rgba(255, 255, 255, 0.1)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          transition: 'all 0.2s ease',
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.background = '#1da1f2';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                        }}
+                      >
+                        <IconBrandTwitter size={20} color="#071b80ff" />
+                      </Box>
+                    </Anchor>
+                    <Anchor
+                      href="https://www.linkedin.com/in/yada-martins/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Box
+                        style={{
+                          width: 40,
+                          height: 40,
+                          borderRadius: '50%',
+                          background: 'rgba(255, 255, 255, 0.1)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          transition: 'all 0.2s ease',
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.background = '#0077b5';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                        }}
+                      >
+                        <IconBrandLinkedin size={20} color="#071b80ff" />
+                      </Box>
+                    </Anchor>
+                  </Group>
+                </div>
+              </Stack>
+            </Card>
+          </Grid.Col>
+
+          <Grid.Col span={{ base: 12, sm: 6, md: 4 }}>
+            <Card
+              padding="xl"
+              radius="lg"
+              shadow="md"
+              style={{ height: '100%', textAlign: 'center' }}
+            >
+              <Stack align="center" gap="lg">
+                <Image
+                  src="https://medexer.com.ng/wp-content/uploads/2023/04/1673818-1-265x300.png"
+                  alt="CMO"
+                  radius="5%"
+                  w={150}
+                  h={150}
+                />
+                <div>
+                  <Title order={4} size="1.25rem" fw={600}>
+                    Cynthia Umunna
+                  </Title>
+                  <Text fw={500}>Co-Founder/Chief Medical Officer</Text>
+                  <Group gap="md" justify="center" mt="md">
+                    <Anchor
+                      href="https://x.com/_UCynthia"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Box
+                        style={{
+                          width: 40,
+                          height: 40,
+                          borderRadius: '50%',
+                          background: 'rgba(255, 255, 255, 0.1)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          transition: 'all 0.2s ease',
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.background = '#1da1f2';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                        }}
+                      >
+                        <IconBrandTwitter size={20} color="#071b80ff" />
+                      </Box>
+                    </Anchor>
+                    <Anchor
+                      href="https://www.linkedin.com/in/cynthia-umunna-1054b0189/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Box
+                        style={{
+                          width: 40,
+                          height: 40,
+                          borderRadius: '50%',
+                          background: 'rgba(255, 255, 255, 0.1)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          transition: 'all 0.2s ease',
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.background = '#0077b5';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                        }}
+                      >
+                        <IconBrandLinkedin size={20} color="#071b80ff" />
+                      </Box>
+                    </Anchor>
+                  </Group>
+                </div>
+              </Stack>
+            </Card>
+          </Grid.Col>
+
+          <Grid.Col span={{ base: 12, sm: 6, md: 4 }}>
+            <Card
+              padding="xl"
+              radius="lg"
+              shadow="md"
+              style={{ height: '100%', textAlign: 'center' }}
+            >
+              <Stack align="center" gap="lg">
+                <Image
+                  src="https://medexer.com.ng/wp-content/uploads/2023/04/asalu-250x300.jpg"
+                  alt="CTO"
+                  radius="5%"
+                  w={150}
+                  h={150}
+                />
+                <div>
+                  <Title order={4} size="1.25rem" fw={600}>
+                    Asalu Peter
+                  </Title>
+                  <Text fw={500}>Co-Founder/CTO</Text>
+                  <Group gap="md" justify="center" mt="md">
+                    <Anchor
+                      href="https://x.com/AsaluPeter"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Box
+                        style={{
+                          width: 40,
+                          height: 40,
+                          borderRadius: '50%',
+                          background: 'rgba(255, 255, 255, 0.1)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          transition: 'all 0.2s ease',
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.background = '#1da1f2';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                        }}
+                      >
+                        <IconBrandTwitter size={20} color="#071b80ff" />
+                      </Box>
+                    </Anchor>
+                    <Anchor
+                      href="https://www.linkedin.com/in/asalu-peter-41300a188/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Box
+                        style={{
+                          width: 40,
+                          height: 40,
+                          borderRadius: '50%',
+                          background: 'rgba(255, 255, 255, 0.1)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          transition: 'all 0.2s ease',
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.background = '#0077b5';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                        }}
+                      >
+                        <IconBrandLinkedin size={20} color="#071b80ff" />
+                      </Box>
+                    </Anchor>
+                  </Group>
                 </div>
               </Stack>
             </Card>

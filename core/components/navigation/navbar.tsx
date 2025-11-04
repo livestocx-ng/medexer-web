@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Box, Container, Drawer, Group, Image, rem, Stack, Text } from '@mantine/core';
+import { Box, Burger, Container, Drawer, Group, Image, rem, Stack, Text } from '@mantine/core';
 import { useDisclosure, useWindowScroll } from '@mantine/hooks';
 import { navLinks } from '@/core/utilities';
 import classes from './navbar.module.css';
@@ -36,7 +36,7 @@ export function Navbar() {
               </Text>
             </Group>
 
-            <Group gap={40} visibleFrom="xs">
+            <Group gap={40} visibleFrom="sm">
               {navLinks.map((link) => (
                 <Link
                   key={link.label}
@@ -59,40 +59,9 @@ export function Navbar() {
                 </Link>
               ))}
             </Group>
-            {/* <Group>
-              <Link href="https://livestocx.com" target="_blank">
-                {' '}
-                <Button
-                  variant="filled"
-                  color="primary"
-                  radius="xl"
-                  size="xs"
-                  fw={600}
-                  style={{
-                    background: 'linear-gradient(135deg, #10b981 20%, #059669 50%, #047857 100%)',
-                    border: 'none',
-                    color: 'white',
-                    fontWeight: 500,
-                    transition: 'transform 0.2s ease-in-out',
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = 'scale(1.05)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = 'scale(1)';
-                  }}
-                >
-                  Marketplace &nbsp; <IconExternalLink size={16} />
-                </Button>
-              </Link>
-              <Burger
-                opened={opened}
-                onClick={toggle}
-                hiddenFrom="xs"
-                size="sm"
-                color={scroll.y > 0 ? 'black' : 'black'}
-              />
-            </Group> */}
+
+            {/* Mobile Burger Menu */}
+            <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" color="#dc2626" />
           </Group>
         </Container>
 
@@ -101,11 +70,12 @@ export function Navbar() {
           opened={opened}
           onClose={toggle}
           size="100%"
-          padding="md"
-          hiddenFrom="xs"
+          padding="xl"
+          hiddenFrom="sm"
           zIndex={1000000}
+          position="right"
         >
-          <Stack>
+          <Stack gap="lg" mt="xl">
             {navLinks.map((link) => (
               <Link
                 key={link.label}
@@ -113,15 +83,26 @@ export function Navbar() {
                 style={{
                   display: 'block',
                   lineHeight: 1,
-                  padding: `${rem(8)} ${rem(12)}`,
-                  borderRadius: 'var(--mantine-radius-sm)',
+                  padding: `${rem(16)} ${rem(20)}`,
+                  borderRadius: 'var(--mantine-radius-md)',
                   textDecoration: 'none',
-                  color: 'var(--mantine-color-black)',
-                  fontSize: 'var(--mantine-font-size-sm)',
-                  fontWeight: 500,
-                  transition: 'background-color 150ms ease',
+                  color: '#1f2937',
+                  fontSize: '1.125rem',
+                  fontWeight: 600,
+                  transition: 'all 0.2s ease',
+                  border: '1px solid #e5e7eb',
                 }}
                 onClick={toggle}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#dc2626';
+                  e.currentTarget.style.color = 'white';
+                  e.currentTarget.style.borderColor = '#dc2626';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'transparent';
+                  e.currentTarget.style.color = '#1f2937';
+                  e.currentTarget.style.borderColor = '#e5e7eb';
+                }}
               >
                 {link.label}
               </Link>

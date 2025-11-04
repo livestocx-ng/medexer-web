@@ -1,17 +1,22 @@
 import React from 'react';
+
 import '@mantine/core/styles.css';
 import '@mantine/dates/styles.css';
 import '@mantine/dropzone/styles.css';
 import '@mantine/carousel/styles.css';
+
 import { theme } from '@/core/themes';
+
 import '@mantine/nprogress/styles.css';
 import '@mantine/notifications/styles.css';
-import { ClientLayout } from '@/core/components/layout/clientLayout';
+
 import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
+import { ClientLayout } from '@/core/components/layout/clientLayout';
 
 export const metadata = {
-  title: 'Medexer - More Comfort, Menstrual, Blood, Less Expensive Periods, Less Pollution',
-  description: 'Biodegradable sanitary pads for all communities',
+  description:
+    'Save lives through blood donation. Connect donors with hospitals to make blood transfusion accessible, safe, and reliable.',
+  keywords: ['Blood Donation', 'Nigeria', 'Hospitals', 'Donors', 'Transfusion', 'Medexer'],
 };
 
 export default function RootLayout({ children }: { children: any }) {

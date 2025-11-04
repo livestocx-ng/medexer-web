@@ -3820,9 +3820,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"Girlified Web(v2)@workspace:.":
+"Medexer Web(v2)@workspace:.":
   version: 0.0.0-use.local
-  resolution: "Girlified Web(v2)@workspace:."
+  resolution: "Medexer Web(v2)@workspace:."
   dependencies:
     "@babel/core": "npm:^7.26.10"
     "@eslint/js": "npm:^9.23.0"

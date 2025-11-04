@@ -2,21 +2,21 @@
 
 import React from 'react';
 import {
-  IconArrowRight,
-  IconCalendar,
-  IconClock,
-  IconEye,
-  IconHeart,
-  IconMessageCircle,
-  IconSearch,
-  IconTag,
-  IconUser,
+  // IconArrowRight,
+  // IconCalendar,
+  // IconClock,
+  // IconEye,
+  // IconHeart,
+  // IconMessageCircle,
+  // IconSearch,
+  // IconTag,
+  // IconUser,
 } from '@tabler/icons-react';
 import {
   Anchor,
   Badge,
   Box,
-  Button,
+  // Button,
   Card,
   Container,
   Grid,
@@ -25,7 +25,7 @@ import {
   Pagination,
   Stack,
   Text,
-  TextInput,
+  // TextInput,
   Title,
 } from '@mantine/core';
 
@@ -60,7 +60,7 @@ const BlogPage = () => {
       readTime: '6 min read',
       category: 'Technology',
       image:
-        'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        'https://dp20430eecj0w.cloudfront.net/versions/original/4dc490a8-f220-4e96-a585-55fdf16d8dd9_4a029a84cd464d33820e07cff3a95d4ejpeg.jpeg',
       views: 1890,
       likes: 156,
       comments: 18,
