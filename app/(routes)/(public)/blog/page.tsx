@@ -1,17 +1,18 @@
 'use client';
 
 import React from 'react';
-import {
-  // IconArrowRight,
-  // IconCalendar,
-  // IconClock,
-  // IconEye,
-  // IconHeart,
-  // IconMessageCircle,
-  // IconSearch,
-  // IconTag,
-  // IconUser,
-} from '@tabler/icons-react';
+
+import '@tabler/icons-react'; // IconArrowRight,
+
+// IconCalendar,
+// IconClock,
+// IconEye,
+// IconHeart,
+// IconMessageCircle,
+// IconSearch,
+// IconTag,
+// IconUser,
+
 import {
   Anchor,
   Badge,
@@ -140,7 +141,7 @@ const BlogPage = () => {
       readTime: '5 min read',
       category: 'Mobile Health',
       image:
-        'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        'https://dp20430eecj0w.cloudfront.net/versions/original/4dc490a8-f220-4e96-a585-55fdf16d8dd9_4a029a84cd464d33820e07cff3a95d4ejpeg.jpeg',
       views: 1280,
       likes: 95,
       comments: 14,

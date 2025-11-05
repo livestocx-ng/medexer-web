@@ -91,7 +91,7 @@ const AboutUs = () => {
             position: 'absolute',
             inset: 0,
             backgroundImage:
-              "url('https://videos.openai.com/az/vg-assets/assets%2Ftask_01k886cf83ejcvywx9brz12rq6%2F1761211835_img_0.webp?se=2025-11-04T14%3A17%3A15Z&sp=r&sv=2024-08-04&sr=b&skoid=1af02b11-169c-463d-b441-d2ccfc9f02c8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-10-29T04%3A56%3A17Z&ske=2025-11-05T05%3A01%3A17Z&sks=b&skv=2024-08-04&sig=gw%2BNGhDjdsz/M67%2B7fHAs9Tb4iMaBZePl14qk15rTRE%3D&ac=oaivgprodscus')",
+              "url('https://videos.openai.com/az/vg-assets/assets%2Ftask_01k886cf83ejcvywx9brz12rq6%2F1761211835_img_1.webp?se=2025-11-08T00%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&skoid=1af02b11-169c-463d-b441-d2ccfc9f02c8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-11-05T01%3A07%3A47Z&ske=2025-11-12T01%3A12%3A47Z&sks=b&skv=2024-08-04&sig=ANYvs0ualrpKN5L6TIlMuTSiF98Mg/faur%2B1t2K56zg%3D&ac=oaivgprodscus')",
             backgroundSize: 'cover',
             backgroundPosition: 'center 20%',
           }}

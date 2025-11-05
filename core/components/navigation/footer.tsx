@@ -47,7 +47,7 @@ export function Footer() {
                 </Text>
                 <Group gap="md" justify="center">
                   <Anchor
-                    href="#"
+                    href="https://www.facebook.com/medexerlimited"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
@@ -73,7 +73,7 @@ export function Footer() {
                     <IconBrandFacebook size={20} />
                   </Anchor>
                   <Anchor
-                    href="#"
+                    href="https://x.com/MedexerLTD?t=zaAalrK9LBFTSFxObWr2rw&s=09"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
@@ -99,7 +99,7 @@ export function Footer() {
                     <IconBrandTwitter size={20} />
                   </Anchor>
                   <Anchor
-                    href="#"
+                    href="https://linkedin.com/company/medexer-limited/"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{

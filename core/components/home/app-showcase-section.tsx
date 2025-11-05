@@ -251,9 +251,16 @@ const AppShowcaseSection = () => {
               style={{
                 background: 'linear-gradient(135deg, #ffffffff 0%, #ffffffff 100%)',
                 color: 'white',
-                padding: '3rem',
                 textAlign: 'center',
                 border: 'none',
+                padding: '1.5rem',
+              }}
+              styles={{
+                root: {
+                  '@media (min-width: 768px)': {
+                    padding: '3rem',
+                  },
+                },
               }}
             >
               <Stack gap="xl" align="center">
@@ -280,24 +287,35 @@ const AppShowcaseSection = () => {
                   </Text>
                 </Stack>
 
-                <Group justify="center">
+                <Stack gap="md" align="center" w="100%">
                   <Link
                     href="https://drive.google.com/file/d/1qTMGY5s_tXc_c7YWzafMPfL1InJbf4l8/view?usp=sharing"
-                    style={{ textDecoration: 'none' }}
+                    style={{ textDecoration: 'none', width: '100%', maxWidth: '300px' }}
                   >
                     <Button
-                      size="lg"
-                      leftSection={<IconDownload size={20} />}
-                      rightSection={<IconBrandWindows size={20} />}
+                      size="md"
+                      leftSection={<IconDownload size={18} />}
+                      rightSection={<IconBrandWindows size={18} />}
+                      fullWidth
                       style={{
                         background: 'black',
                         color: '#ffffffff',
                         border: 'none',
                         borderRadius: '8px',
-                        padding: '14px 28px',
-                        fontSize: '16px',
+                        padding: '10px 12px',
+                        fontSize: '13px',
                         fontWeight: 600,
                         transition: 'all 0.2s ease',
+                        minHeight: '44px',
+                      }}
+                      styles={{
+                        root: {
+                          '@media (min-width: 768px)': {
+                            padding: '14px 28px !important',
+                            fontSize: '16px !important',
+                            minHeight: '52px !important',
+                          },
+                        },
                       }}
                       onMouseEnter={(e) => {
                         e.currentTarget.style.transform = 'translateY(-2px)';
@@ -313,21 +331,32 @@ const AppShowcaseSection = () => {
                   </Link>
                   <Link
                     href="https://drive.google.com/file/d/1E6QfXXfI7BrWAkLyqsuBmDVNh8oHhjbo/view?usp=sharing"
-                    style={{ textDecoration: 'none' }}
+                    style={{ textDecoration: 'none', width: '100%', maxWidth: '300px' }}
                   >
                     <Button
-                      size="lg"
-                      leftSection={<IconDownload size={20} />}
-                      rightSection={<IconBrandApple size={20} />}
+                      size="md"
+                      leftSection={<IconDownload size={18} />}
+                      rightSection={<IconBrandApple size={18} />}
+                      fullWidth
                       style={{
                         background: 'black',
                         color: '#ffffffff',
                         border: 'none',
                         borderRadius: '8px',
-                        padding: '14px 28px',
-                        fontSize: '16px',
+                        padding: '10px 12px',
+                        fontSize: '13px',
                         fontWeight: 600,
                         transition: 'all 0.2s ease',
+                        minHeight: '44px',
+                      }}
+                      styles={{
+                        root: {
+                          '@media (min-width: 768px)': {
+                            padding: '14px 28px !important',
+                            fontSize: '16px !important',
+                            minHeight: '52px !important',
+                          },
+                        },
                       }}
                       onMouseEnter={(e) => {
                         e.currentTarget.style.transform = 'translateY(-2px)';
@@ -341,7 +370,7 @@ const AppShowcaseSection = () => {
                       Download Our Desktop App Here
                     </Button>
                   </Link>
-                </Group>
+                </Stack>
               </Stack>
             </Card>
 

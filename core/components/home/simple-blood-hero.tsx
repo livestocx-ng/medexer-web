@@ -35,7 +35,7 @@ const SimpleBloodHero = () => {
         }}
       >
         <source
-          src="https://videos.openai.com/az/vg-assets/assets%2Ftask_01k7nz1t1qemr80jgjsn23q3k9%2Ftask_01k7nz1t1qemr80jgjsn23q3k9_genid_bb4c66a3-78d7-4287-a168-6f6ca8962127_25_10_16_07_34_336653%2Fvideos%2F00000_180850511%2Fsource.mp4?se=2025-11-04T12%3A35%3A21Z&sp=r&sv=2024-08-04&sr=b&skoid=1af02b11-169c-463d-b441-d2ccfc9f02c8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-10-29T04%3A57%3A24Z&ske=2025-11-05T05%3A02%3A24Z&sks=b&skv=2024-08-04&sig=KvR5wk1dsdhUtAko%2BQe9/ZT2uXo/yI2o8ua/HuNspZs%3D&ac=oaivgprodscus"
+          src="https://videos.openai.com/az/vg-assets/assets%2Ftask_01k7nz1t1qemr80jgjsn23q3k9%2Ftask_01k7nz1t1qemr80jgjsn23q3k9_genid_bb4c66a3-78d7-4287-a168-6f6ca8962127_25_10_16_07_34_336653%2Fvideos%2F00000_180850511%2Fmd.mp4?se=2025-11-08T00%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&skoid=1af02b11-169c-463d-b441-d2ccfc9f02c8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-11-05T01%3A07%3A47Z&ske=2025-11-12T01%3A12%3A47Z&sks=b&skv=2024-08-04&sig=6y4ESTUAGl07XMR7OLbJOI3m7VPZiapMJBvJriBSYmQ%3D&ac=oaivgprodscus"
           type="video/mp4"
         />
       </video>
