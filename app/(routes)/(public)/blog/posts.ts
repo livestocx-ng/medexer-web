@@ -140,18 +140,6 @@ export const posts: Record<number, BlogDetail> = {
   },
   9: {
     id: 9,
-    title: 'Fruit Series (6) - Coconut',
-    date: '2025',
-    excerpt:
-      'Get ready to explore how this versatile fruit can make your donation journey healthier, more refreshing...',
-    readTime: '3 min read',
-    author: 'Medexer',
-    category: 'Fruit Series',
-    image: 'https://medexer.com.ng/wp-content/uploads/2023/09/coconut-1-768x512.jpg',
-    sections: [ { type: 'p', text: 'Get ready to explore how this versatile fruit can make your donation journey healthier, more refreshing...' } ],
-  },
-  10: {
-    id: 10,
     title: 'Fruit Series (4) - Black Currant',
     date: '2025',
     excerpt:
@@ -162,6 +150,19 @@ export const posts: Record<number, BlogDetail> = {
     image: 'https://medexer.com.ng/wp-content/uploads/2023/08/black-currant.jpg',
     sections: [ { type: 'p', text: 'Blood donation and organ transplantation can sometimes lead to a bit of inflammation, like the aftermath of an epic battle. But...' } ],
   },
+  10: {
+    id: 10,
+    title: 'Fruit Series (6) - Coconut',
+    date: '2025',
+    excerpt:
+      'Get ready to explore how this versatile fruit can make your donation journey healthier, more refreshing...',
+    readTime: '3 min read',
+    author: 'Medexer',
+    category: 'Fruit Series',
+    image: 'https://medexer.com.ng/wp-content/uploads/2023/09/coconut-1-768x512.jpg',
+    sections: [ { type: 'p', text: 'Get ready to explore how this versatile fruit can make your donation journey healthier, more refreshing...' } ],
+  },
+ 
   11: {
     id: 11,
     title: 'Fruit Series (1) - Apples',

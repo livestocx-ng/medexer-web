@@ -58,7 +58,7 @@ const ContactUs = () => {
         position: 'relative',
         minHeight: '100vh',
         backgroundImage:
-          "url('https://videos.openai.com/az/vg-assets/assets%2Ftask_01k883xse5e8gvq1bejqb6gezw%2F1761209201_img_1.webp?se=2025-11-08T00%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&skoid=1af02b11-169c-463d-b441-d2ccfc9f02c8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-11-05T01%3A07%3A47Z&ske=2025-11-12T01%3A12%3A47Z&sks=b&skv=2024-08-04&sig=y99gXFD2auYxrOERIWh08dMEipbygUvKiL8ZvTm5tEU%3D&ac=oaivgprodscus')",
+          "url('https://videos.openai.com/az/vg-assets/assets%2Ftask_01k886cf83ejcvywx9brz12rq6%2F1761211835_img_0.webp?se=2025-11-14T00%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&skoid=aa5ddad1-c91a-4f0a-9aca-e20682cc8969&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-11-10T01%3A08%3A58Z&ske=2025-11-17T01%3A13%3A58Z&sks=b&skv=2024-08-04&sig=4R4wH8HykhHU/M97%2Brvy6Z/lSxYMhc4bGKHFPlixVog%3D&ac=oaivgprodscus')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
@@ -686,7 +686,7 @@ const ContactUs = () => {
       {/* Call to Action */}
       <Box
         style={{
-          background: 'rgba(220, 38, 38, 0.95)',
+          background: '#071b80ff',
           color: 'white',
           position: 'relative',
           zIndex: 2,

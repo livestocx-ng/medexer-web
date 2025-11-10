@@ -75,7 +75,7 @@ const BlogPage = () => {
                 shadow="sm"
                 style={{
                   overflow: 'hidden',
-                  height: 420,
+                  height: 460,
                   border: '1px solid #e5e7eb',
                   transition: 'all 0.2s ease',
                   cursor: 'pointer',

@@ -33,9 +33,11 @@ const SimpleBloodHero = () => {
           zIndex: -2,
           objectFit: 'cover',
         }}
+
       >
         <source
-          src="https://videos.openai.com/az/vg-assets/assets%2Ftask_01k7nz1t1qemr80jgjsn23q3k9%2Ftask_01k7nz1t1qemr80jgjsn23q3k9_genid_bb4c66a3-78d7-4287-a168-6f6ca8962127_25_10_16_07_34_336653%2Fvideos%2F00000_180850511%2Fmd.mp4?se=2025-11-08T00%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&skoid=1af02b11-169c-463d-b441-d2ccfc9f02c8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-11-05T01%3A07%3A47Z&ske=2025-11-12T01%3A12%3A47Z&sks=b&skv=2024-08-04&sig=6y4ESTUAGl07XMR7OLbJOI3m7VPZiapMJBvJriBSYmQ%3D&ac=oaivgprodscus"
+          //src="https://ideos.openai.com/az/vg-assets/task_01k9pkqfc5e80r57vsjnd0e1fs%2Ftask_01k9pkqfc5e80r57vsjnd0e1fs_genid_3bc89f54-e87a-4447-8349-03b937244949_25_11_10_10_07_559494%2Fvideos%2F00000_266337402%2Fsource.mp4?se=2025-11-14T00%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&skoid=aa5ddad1-c91a-4f0a-9aca-e20682cc8969&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-11-10T01%3A08%3A59Z&ske=2025-11-17T01%3A13%3A59Z&sks=b&skv=2024-08-04&sig=ANN/gecNRRQAB5oF8X2dGipB3ue%2BxojhE2%2BJPfFfrt4%3D&ac=oaivgprodscus2"
+          src="https://videos.openai.com/az/vg-assets/task_01k9ppy00sea7t93frq0qnhzv5%2F1762772704_img_0.webp?se=2025-11-14T00%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&skoid=aa5ddad1-c91a-4f0a-9aca-e20682cc8969&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-11-10T01%3A08%3A59Z&ske=2025-11-17T01%3A13%3A59Z&sks=b&skv=2024-08-04&sig=lklg/KDXJKOOvVDiqMgNOAzz3VHpote0VnLXvrjGlXk%3D&ac=oaivgprodscus2"
           type="video/mp4"
         />
       </video>
@@ -46,7 +48,8 @@ const SimpleBloodHero = () => {
           position: 'absolute',
           inset: 0,
           backgroundImage:
-            "url('https://dp20430eecj0w.cloudfront.net/versions/original/560effc4-9f14-4091-bf55-0aef640db3a4_202510230035blood_donation_scenesimplecompose01k87zry8zfbr8wvz9mcjh4tpvpng.png')",
+            // "url('https://dp20430eecj0w.cloudfront.net/versions/original/560effc4-9f14-4091-bf55-0aef640db3a4_202510230035blood_donation_scenesimplecompose01k87zry8zfbr8wvz9mcjh4tpvpng.png')",
+            "url('https://videos.openai.com/az/vg-assets/task_01k9pqv58ees3b8njahgnw7dsk%2F1762773684_img_0.webp?se=2025-11-14T00%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&skoid=aa5ddad1-c91a-4f0a-9aca-e20682cc8969&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-11-10T01%3A08%3A59Z&ske=2025-11-17T01%3A13%3A59Z&sks=b&skv=2024-08-04&sig=y6mUp6WkbUhdBD3yD4W09bdNlQ/mvtOlWZ7%2BtXtp6pc%3D&ac=oaivgprodscus2')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',

@@ -1066,7 +1066,7 @@ export default function BlogDetailPage() {
   }
 
   return (
-    <Container py="xl" w="40%">
+    <Container py="xl" w="100%" maw={900} px="md">
       {/* Main post */}
       <Stack gap="md">
         <Title order={1}>{post.title}</Title>

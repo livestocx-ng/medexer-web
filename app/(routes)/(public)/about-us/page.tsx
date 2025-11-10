@@ -26,6 +26,48 @@ import {
   Title,
 } from '@mantine/core';
 
+const useCountUp = (end: number, durationMs: number = 2000) => {
+  const [value, setValue] = React.useState<number>(0);
+
+  React.useEffect(() => {
+    let animationFrameId: number;
+    const start = performance.now();
+
+    const animate = (time: number) => {
+      const elapsed = time - start;
+      const progress = Math.min(elapsed / durationMs, 1);
+      const eased = 1 - (1 - progress) ** 3;
+      setValue(Math.floor(end * eased));
+      if (progress < 1) {
+        animationFrameId = requestAnimationFrame(animate);
+      }
+    };
+
+    animationFrameId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animationFrameId);
+  }, [end, durationMs]);
+
+  return value;
+};
+
+const formatNumber = (num: number) =>
+  new Intl.NumberFormat(undefined, { maximumFractionDigits: 0 }).format(num);
+
+const CounterTitle = ({
+  end,
+  size,
+}: {
+  end: number;
+  size: string;
+}) => {
+  const value = useCountUp(end, 4000);
+  return (
+    <Title order={2} style={{ fontSize: size, lineHeight: 1.1 }} fw={800} c="#071b80ff">
+      {formatNumber(value)}
+    </Title>
+  );
+};
+
 const AboutUs = () => {
   const videoUrl = 'https://youtu.be/spFEMDAG0xk';
 
@@ -91,7 +133,7 @@ const AboutUs = () => {
             position: 'absolute',
             inset: 0,
             backgroundImage:
-              "url('https://videos.openai.com/az/vg-assets/assets%2Ftask_01k886cf83ejcvywx9brz12rq6%2F1761211835_img_1.webp?se=2025-11-08T00%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&skoid=1af02b11-169c-463d-b441-d2ccfc9f02c8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-11-05T01%3A07%3A47Z&ske=2025-11-12T01%3A12%3A47Z&sks=b&skv=2024-08-04&sig=ANYvs0ualrpKN5L6TIlMuTSiF98Mg/faur%2B1t2K56zg%3D&ac=oaivgprodscus')",
+              "url('https://videos.openai.com/az/vg-assets/assets%2Ftask_01k886cf83ejcvywx9brz12rq6%2F1761211835_img_1.webp?se=2025-11-14T00%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&skoid=aa5ddad1-c91a-4f0a-9aca-e20682cc8969&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-11-10T01%3A08%3A58Z&ske=2025-11-17T01%3A13%3A58Z&sks=b&skv=2024-08-04&sig=jlH7SU3JdvjbpEDopHfD4Uvvqnv8DxmfCyKQI2q%2BYiQ%3D&ac=oaivgprodscus')",
             backgroundSize: 'cover',
             backgroundPosition: 'center 20%',
           }}
@@ -361,61 +403,85 @@ const AboutUs = () => {
       </Container>
 
       {/* Impact Section */}
-      <Box style={{ background: '#dc2626', color: 'white' }}>
+      <Box style={{ background: 'white' }}>
         <Container size="xl" py={80}>
           <Stack align="center" ta="center" mb={60}>
-            <Title order={2} size="2.5rem" fw={600}>
-              Our Impact
+            <Title order={2} size="2.5rem" fw={600} c="#dc2626">
+            The statistics is alarming!
             </Title>
-            <Text size="lg" maw={600}>
-              Since our inception, we've been making a real difference in communities worldwide
+            <Text size="lg" maw={600} c="dimmed">
+            The African healthcare system is experiencing chronic blood shortages across its sectors.
             </Text>
           </Stack>
 
-          <Grid gutter={40}>
-            <Grid.Col span={{ base: 12, sm: 6, md: 3 }}>
-              <Stack align="center" ta="center">
-                <Title order={2} size="3rem" fw={700}>
-                  50K+
-                </Title>
-                <Text size="lg" fw={500}>
-                  Lives Saved
-                </Text>
-                <Text size="sm" opacity={0.8}>
-                  Through successful blood donations
-                </Text>
-              </Stack>
+          <Grid gutter={{ base: 30, sm: 40 }} justify="center">
+            <Grid.Col span={{ base: 12, sm: 6, md: 4 }}>
+              <Card
+                padding="xl"
+                radius="lg"
+                shadow="md"
+                style={{
+                  height: '100%',
+                  border: '1px solid #e0e0e0',
+                }}
+              >
+                <Stack align="center" ta="center" px={{ base: 'md', sm: 'lg' }}>
+                  <CounterTitle end={3290289} size="clamp(2.75rem, 6vw, 4.25rem)" />
+                  <Text size="lg" fw={500} c="dimmed" style={{ wordWrap: 'break-word', overflowWrap: 'break-word' }}>
+                  units of blood in 2020 in thirty eight (38) African countries, according to the WHO.
+                  </Text>
+                  {/* <Text size="sm" opacity={0.8}>
+                    Through successful blood donations
+                  </Text> */}
+                </Stack>
+              </Card>
             </Grid.Col>
 
-            <Grid.Col span={{ base: 12, sm: 6, md: 3 }}>
-              <Stack align="center" ta="center">
-                <Title order={2} size="3rem" fw={700}>
-                  25K+
-                </Title>
-                <Text size="lg" fw={500}>
-                  Active Donors
-                </Text>
-                <Text size="sm" opacity={0.8}>
-                  Registered on our platform
-                </Text>
-              </Stack>
+            <Grid.Col span={{ base: 12, sm: 6, md: 4 }}>
+              <Card
+                padding="xl"
+                radius="lg"
+                shadow="md"
+                style={{
+                  height: '100%',
+                  border: '1px solid #e0e0e0',
+                }}
+              >
+                <Stack align="center" ta="center" px={{ base: 'md', sm: 'lg' }}>
+                  <CounterTitle end={196000} size="clamp(2.75rem, 6vw, 4.25rem)" />
+                  <Text size="lg" fw={500} c="dimmed" style={{ wordWrap: 'break-word', overflowWrap: 'break-word' }}>
+                  women dying yearly in sub-Saharan Africa from pregnancy complications, a third die from bleeding; half the world's severe bleeding deaths occur here, 65% post-birth (PPH)
+                  </Text>
+                  {/* <Text size="sm" opacity={0.8}>
+                    Registered on our platform
+                  </Text> */}
+                </Stack>
+              </Card>
             </Grid.Col>
 
-            <Grid.Col span={{ base: 12, sm: 6, md: 3 }}>
-              <Stack align="center" ta="center">
-                <Title order={2} size="3rem" fw={700}>
-                  500+
-                </Title>
-                <Text size="lg" fw={500}>
-                  Partner Hospitals
-                </Text>
-                <Text size="sm" opacity={0.8}>
-                  Across multiple countries
-                </Text>
-              </Stack>
+            <Grid.Col span={{ base: 12, sm: 6, md: 4 }}>
+              <Card
+                padding="xl"
+                radius="lg"
+                shadow="md"
+                style={{
+                  height: '100%',
+                  border: '1px solid #e0e0e0',
+                }}
+              >
+                <Stack align="center" ta="center" px={{ base: 'md', sm: 'lg' }}>
+                  <CounterTitle end={1800000} size="clamp(2.75rem, 6vw, 4.25rem)" />
+                  <Text size="lg" fw={500} c="dimmed" style={{ wordWrap: 'break-word', overflowWrap: 'break-word' }}>
+                  pints of blood annually are needed to service the population of Nigeria out of which only 27% is provided.
+                  </Text>
+                  {/* <Text size="sm" opacity={0.8}>
+                    Across multiple countries
+                  </Text> */}
+                </Stack>
+              </Card>
             </Grid.Col>
 
-            <Grid.Col span={{ base: 12, sm: 6, md: 3 }}>
+            {/* <Grid.Col span={{ base: 12, sm: 6, md: 3 }}>
               <Stack align="center" ta="center">
                 <Title order={2} size="3rem" fw={700}>
                   99.9%
@@ -427,7 +493,7 @@ const AboutUs = () => {
                   In matching donors to recipients
                 </Text>
               </Stack>
-            </Grid.Col>
+            </Grid.Col> */}
           </Grid>
         </Container>
       </Box>
@@ -436,7 +502,7 @@ const AboutUs = () => {
       <Box style={{ background: '#f8fafc' }}>
         <Container size="xl" py={80}>
           <Stack align="center" mb={60}>
-            <Title order={2} size="2.5rem" fw={600} ta="center" c="#071b80ff">
+            <Title order={2} size="2.5rem" fw={600} ta="center" c="#dc2626">
               How We Work
             </Title>
             <Text size="lg" ta="center" maw={600} c="dimmed">
